@@ -3,6 +3,10 @@ import streamlit as st
 from joblib import load
 from sklearn.preprocessing import StandardScaler
 
+import subprocess
+import sys
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'joblib'])
+
 # Streamlit界面
 def main():
     st.title('健康指标预测')
